@@ -4,8 +4,12 @@
 $default-transition-duration: 0.3s;
 $orange: #f39c12;
 
+/* Tools */
+@import "tools/mixins";
+
 /* Base */
 @import "base/base";
+@import "base/from";
 
 /* Layout */
 @import "layout/grid";
@@ -14,6 +18,9 @@ $orange: #f39c12;
 @import "module/header";
 @import "module/btn";
 @import "module/section";
+@import "module/footer";
 @import "module/icon";
 @import "module/about";
 @import "module/progress";
+@import "module/post";
+@import "module/contact";

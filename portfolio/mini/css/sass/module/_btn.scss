@@ -1,11 +1,25 @@
 .btn {
-    background-color: $orange;
-
     font-size: 15px;
     text-transform: uppercase;
     line-height: 40px;
     color: #fff;
+    font-weight: 600;
 
     padding: 0 40px;
     display: inline-block;
+
+    background-color: transparent;
+    background-color: rgba($orange, 0);
+    border: 2px solid #fff;
+    @include transition-duration;
+    &:hover {
+        background-color: $orange;
+        border-color: $orange;
+        color: #fff;
+    }
+}
+.btn-primary {
+    border-color: $orange;
+    font-weight: bold;
+    color: #000;
 }

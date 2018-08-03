@@ -1,0 +1,17 @@
+input, textarea, button {
+    outline: none;
+    border-radius: 0;
+}
+.from-input {
+    height: 45px;
+    width: 100%;
+    border: 2px solid #d9d9d9;
+    margin-bottom: 10px;
+    padding: 0 30px;
+}
+.form-textarea {
+    @extend .from-input;
+    height: 150px;
+    padding: 15px 0;
+    
+}
