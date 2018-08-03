@@ -3,7 +3,7 @@
 }
 
 .progress-item {
-
+    margin-bottom: 30px;
 }
 
 .progress-title {
@@ -12,7 +12,16 @@
 }
 
 .progress-bar {
-    width: 88%;
+    height: 10px;
+    background-color: #e6e6e6;
+    position: relative;
+    span {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $orange;
+    }
 }
 
 .progress-design {

@@ -200,13 +200,13 @@ hr {
   background-image: url('img/icon-s0e6a00b6fa.png');
   background-repeat: no-repeat; }
 
-/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-bulb {
   background-position: 0 0;
   height: 40px;
   width: 28px; }
 
-/* line 84, ../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-params {
   background-position: 0 -40px;
   height: 32px;
@@ -266,6 +266,10 @@ hr {
   float: left;
   width: 610px; }
 
+/* line 5, sass/module/_progress.scss */
+.progress-item {
+  margin-bottom: 30px; }
+
 /* line 9, sass/module/_progress.scss */
 .progress-title {
   line-height: 40px;
@@ -273,20 +277,29 @@ hr {
 
 /* line 14, sass/module/_progress.scss */
 .progress-bar {
-  width: 88%; }
+  height: 10px;
+  background-color: #e6e6e6;
+  position: relative; }
+  /* line 18, sass/module/_progress.scss */
+  .progress-bar span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f39c12; }
 
-/* line 18, sass/module/_progress.scss */
+/* line 27, sass/module/_progress.scss */
 .progress-design {
   width: 76%; }
 
-/* line 22, sass/module/_progress.scss */
+/* line 31, sass/module/_progress.scss */
 .progress-development {
   width: 76%; }
 
-/* line 26, sass/module/_progress.scss */
+/* line 35, sass/module/_progress.scss */
 .progress-wordPress {
   width: 81%; }
 
-/* line 30, sass/module/_progress.scss */
+/* line 39, sass/module/_progress.scss */
 .progress-drupal {
   width: 71%; }
