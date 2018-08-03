@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+body{
+	margin: 0;
+}
+
+#bloc_page{
+	width: 1258px;
+	margin: auto;
+}
+
+#bg_header{
+	background: url('../img/bg_header.jpg') no-repeat;
+	width: 100%;
+	height: 385px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+	opacity: 0.75;
+}
+
+abbr{
+	color: #dd101e;
+}
+
+.rmc{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.titre_principal{
+	color: #3a5b6c;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: Roboto;
+	font-weight: 400;
+}
+
+.rmc p{
+	font-size: 1em;
+	font-family: Arial;
+	margin: 0 30px 0 30px;
+}
+
+.calendrier_rmc{
+	text-align: center;
+	margin: auto;
+    width: 840px;
+}
+
+.titre_calendrier{
+	text-align: center;
+	color: #3a5b6c;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: Roboto;
+	font-weight: 700;
+}
+
+.flex-container{
+	display: flex;
+  	justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banniere_image{
+	width: 268px;
+	height: 400px;
+	background: url('../img/bg_calendrier.jpg') no-repeat;
+	margin: 5px;
+}
+
+.date_skifit{
+	height: 63px;
+	margin-bottom: 20px;
+    background-color: #2c434f;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date_skifit h2{
+	margin: 0;
+    font-size: 1.1em;
+    font-family: Roboto;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.date_skifit abbr{
+	font-weight: 400;
+	color: #fff;
+}
+
+.bg_station{
+	width: 170px;
+	height: 150px;
+	margin: auto;
+}
+
+.station{
+	height: 25px;
+    background-color: #dd101e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.station h4{
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin:	0;
+} 
+
+.logo_station{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+}
+
+.link_station{
+    height: 25px;
+    background-color: #dd101e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_station a{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 0.7em;
+    text-decoration: none;
+    color: #fff;
+ 
+}
+
+.plan_jour{
+	width: 250px;
+	margin: auto;
+}
+
+.plan_jour h3{
+	text-transform: uppercase;
+	font-family: Roboto;
+    font-weight: 900;
+    font-size: 1em;
+    color: #dd101e;
+    margin: 15px 0 0 0;
+}
+
+.plan_jour p{
+	font-family: Roboto;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #000;
+
+}
+
+#titre_ski{
+	text-align: center;
+	color: #3a5b6c;
+	text-transform: uppercase;
+	font-size: 2em;
+	font-family: Roboto;
+	font-weight: 700;
+	margin-top: 65px;
+}
+
+@media all and (max-width: 1200px )
+{
+    #bloc_page{
+        width: auto;
+    } 
+    .calendrier_rmc{
+	    width: 840px;
+	}
+}
+
+@media screen and (max-width: 900px) and (max-width: 800px)
+{ 
+    .calendrier_rmc{
+	    width: auto;
+	}
+}
+
+@media screen and (max-width: 500px)
+{ 
+    #bg_header{
+	   background: none;
+	}
+	
+	#logo{
+		opacity: 1;
+	}
+}

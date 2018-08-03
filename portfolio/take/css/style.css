@@ -1,0 +1,256 @@
+/* Variable */
+/* Base */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,900");
+/* line 1, sass/base/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 7, sass/base/_base.scss */
+#body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #959595; }
+  /* line 12, sass/base/_base.scss */
+  #body h1 {
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.2; }
+  /* line 18, sass/base/_base.scss */
+  #body h2 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #222626;
+    line-height: 0.686; }
+  /* line 24, sass/base/_base.scss */
+  #body h3 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.2; }
+  /* line 30, sass/base/_base.scss */
+  #body h5 {
+    font-size: 13px;
+    line-height: 1.846;
+    font-weight: 900; }
+  /* line 35, sass/base/_base.scss */
+  #body p {
+    font-size: 14px;
+    line-height: 1.714; }
+  /* line 39, sass/base/_base.scss */
+  #body a {
+    text-decoration: none; }
+
+/* Modules */
+/* line 1, sass/module/_header.scss */
+#header {
+  background: url(img/bg_header.jpg) no-repeat top;
+  background-size: cover; }
+  /* line 5, sass/module/_header.scss */
+  #header .logo img {
+    margin-top: 55px; }
+  /* line 8, sass/module/_header.scss */
+  #header h1 {
+    margin-top: 340px; }
+  /* line 11, sass/module/_header.scss */
+  #header p {
+    margin: 20px 0;
+    color: #fff; }
+  /* line 15, sass/module/_header.scss */
+  #header .iphone img {
+    position: relative;
+    top: 225px; }
+
+/* Description */
+/* line 2, sass/module/_section.scss */
+#description {
+  margin: 90px 0; }
+  /* line 4, sass/module/_section.scss */
+  #description h2 {
+    margin: 30px 0; }
+
+/* Contenu mis en avant */
+/* line 10, sass/module/_section.scss */
+#featured_content .grid {
+  height: 280px;
+  padding: 45px;
+  color: #fff; }
+  /* line 15, sass/module/_section.scss */
+  #featured_content .grid h3 {
+    margin: 5px 0; }
+  /* line 18, sass/module/_section.scss */
+  #featured_content .grid p {
+    margin: 20px 0; }
+  /* line 21, sass/module/_section.scss */
+  #featured_content .grid a {
+    margin: 20px 0;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle; }
+    /* line 27, sass/module/_section.scss */
+    #featured_content .grid a i {
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 15px; }
+/* line 35, sass/module/_section.scss */
+#featured_content .quality {
+  background-color: #f5989d; }
+/* line 38, sass/module/_section.scss */
+#featured_content .last {
+  background-color: #615f7d; }
+/* line 41, sass/module/_section.scss */
+#featured_content .client {
+  background: url(img/bg_our-clients.jpg) no-repeat;
+  background-size: cover; }
+/* line 45, sass/module/_section.scss */
+#featured_content .great {
+  background-color: #bd8cbf; }
+/* line 48, sass/module/_section.scss */
+#featured_content .Sign {
+  background: url(img/bg_sign-up.jpg) no-repeat;
+  background-size: cover; }
+/* line 52, sass/module/_section.scss */
+#featured_content .picture {
+  background-color: #82ca9c; }
+/* line 55, sass/module/_section.scss */
+#featured_content .somthing {
+  background: url(img/bg_start.jpg) no-repeat;
+  background-size: cover; }
+
+/* Details */
+/* line 61, sass/module/_section.scss */
+#details {
+  margin: 100px 0 150px 0; }
+  /* line 63, sass/module/_section.scss */
+  #details h2 {
+    margin: 70px 0 40px 0; }
+  /* line 66, sass/module/_section.scss */
+  #details h6 {
+    color: #67676d;
+    margin: 30px 0; }
+
+/* Big picture */
+/* line 72, sass/module/_section.scss */
+#big-picture {
+  background: url(img/bg_power.jpg) no-repeat top;
+  background-size: cover;
+  color: #fff; }
+  /* line 77, sass/module/_section.scss */
+  #big-picture h1 {
+    margin: 445px 0 45px 0; }
+  /* line 80, sass/module/_section.scss */
+  #big-picture .bp-info {
+    margin-bottom: 110px; }
+    /* line 83, sass/module/_section.scss */
+    #big-picture .bp-info a {
+      color: #fff;
+      display: inline-block;
+      vertical-align: middle; }
+      /* line 88, sass/module/_section.scss */
+      #big-picture .bp-info a i {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 15px; }
+
+/* About */
+/* line 97, sass/module/_section.scss */
+#about {
+  background-color: #82ca9c;
+  background-size: cover; }
+  /* line 100, sass/module/_section.scss */
+  #about h2 {
+    padding: 120px 0 65px 0;
+    color: #fff; }
+  /* line 104, sass/module/_section.scss */
+  #about .a-info {
+    margin-bottom: 165px;
+    color: #fff; }
+
+/* Gammes de prix  */
+/* line 110, sass/module/_section.scss */
+#price_ranges {
+  background-color: #f6f7fa;
+  background-size: cover; }
+  /* line 114, sass/module/_section.scss */
+  #price_ranges .bloc {
+    margin: 105px 0 180px 0;
+    padding: 55px; }
+    /* line 118, sass/module/_section.scss */
+    #price_ranges .bloc span {
+      font-size: 11px;
+      color: #fff; }
+    /* line 122, sass/module/_section.scss */
+    #price_ranges .bloc .badge-light-gree {
+      background-color: #e1e1e1;
+      padding: 9px 12px; }
+    /* line 126, sass/module/_section.scss */
+    #price_ranges .bloc .badge-light-purple {
+      background-color: #bd8cbf;
+      padding: 9px 12px; }
+    /* line 130, sass/module/_section.scss */
+    #price_ranges .bloc h3 {
+      margin: 25px 0;
+      color: #222626; }
+    /* line 134, sass/module/_section.scss */
+    #price_ranges .bloc p {
+      margin: 3px 0 28px 0; }
+    /* line 137, sass/module/_section.scss */
+    #price_ranges .bloc a {
+      background-color: #82ca9c;
+      border-radius: 5px;
+      padding: 20px 27px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      display: inline-block;
+      margin: 20px 0; }
+    /* line 148, sass/module/_section.scss */
+    #price_ranges .bloc .stor {
+      font-size: 25px;
+      color: #c5c5c5; }
+      /* line 152, sass/module/_section.scss */
+      #price_ranges .bloc .stor i:nth-child(2) {
+        padding-left: 20px; }
+  /* line 158, sass/module/_section.scss */
+  #price_ranges .most {
+    background-color: #fff;
+    box-shadow: 0 0 62px 10px #e6e6e6; }
+
+/* Footer */
+/* line 165, sass/module/_section.scss */
+#footer {
+  background-color: #192431;
+  padding: 130px 0 155px 0; }
+  /* line 169, sass/module/_section.scss */
+  #footer h5 {
+    margin-bottom: 30px; }
+  /* line 172, sass/module/_section.scss */
+  #footer p {
+    margin-bottom: 75px; }
+  /* line 175, sass/module/_section.scss */
+  #footer .nav a {
+    color: #959595; }
+  /* line 179, sass/module/_section.scss */
+  #footer .stay input {
+    border-radius: 2px;
+    border: #f6f7fa;
+    background-color: #f6f7fa;
+    width: 470px;
+    height: 58px;
+    margin-bottom: 18px; }
+  /* line 187, sass/module/_section.scss */
+  #footer .stay button {
+    background-color: #82ca9c;
+    width: 94px;
+    height: 58px;
+    border-radius: 2px;
+    border: #82ca9c; }
+    /* line 194, sass/module/_section.scss */
+    #footer .stay button i {
+      color: #fff; }
+  /* line 198, sass/module/_section.scss */
+  #footer .stay p {
+    color: #615f7d; }

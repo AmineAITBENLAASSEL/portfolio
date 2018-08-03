@@ -1,0 +1,202 @@
+/* Description */
+#description {
+    margin: 90px 0;
+    h2 {
+        margin: 30px 0;
+    }
+}
+/* Contenu mis en avant */
+#featured_content {
+   .grid {
+       height: 280px;
+       padding: 45px;
+       color: #fff;
+      
+       h3 {
+        margin: 5px 0;
+       }
+       p {
+        margin: 20px 0;
+       }
+       a {
+        margin: 20px 0;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 15px;
+            }
+       }
+       
+   }
+   .quality {
+       background-color: $pink;
+   }
+   .last {
+        background-color: $purple;
+   }
+   .client {
+        background: url(img/bg_our-clients.jpg) no-repeat;
+        background-size: cover;
+   }
+   .great {
+        background-color: $light-purple;
+   }
+   .Sign {
+        background: url(img/bg_sign-up.jpg) no-repeat;
+        background-size: cover;
+   }
+   .picture {
+        background-color: $green;
+   }
+   .somthing {
+        background: url(img/bg_start.jpg) no-repeat;
+        background-size: cover;
+   }
+}
+/* Details */
+#details {
+    margin: 100px 0 150px 0;
+    h2 {
+        margin: 70px 0 40px 0; 
+    }
+    h6 {
+        color: $light-black;
+        margin: 30px 0;
+    }
+}
+/* Big picture */
+#big-picture {
+    background: url(img/bg_power.jpg) no-repeat top;
+    background-size: cover;
+    color: #fff;
+    
+    h1 {
+        margin: 445px 0 45px 0;
+    }
+    .bp-info {
+        margin-bottom: 110px;
+        
+        a {
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+/* About */
+#about {
+    background-color: $green;
+    background-size: cover;
+    h2 {
+        padding: 120px 0 65px 0;
+        color: #fff;
+    }
+    .a-info {
+        margin-bottom: 165px;
+        color: #fff;
+    }
+}
+/* Gammes de prix  */
+#price_ranges {
+    background-color: #f6f7fa;
+    background-size: cover;
+
+    .bloc {
+        margin: 105px 0 180px 0;
+        padding: 55px;
+
+        span {
+            font-size: 11px;
+            color: #fff;
+        }
+        .badge-light-gree {
+            background-color: $light-gree;
+            padding: 9px 12px;
+        }
+        .badge-light-purple {
+            background-color: $light-purple;
+            padding: 9px 12px;
+        }
+        h3 {
+            margin: 25px 0;
+            color: $black;
+        }
+        p {
+            margin: 3px 0 28px 0;
+        }
+        a {
+            background-color: $green;
+            border-radius: 5px; 
+            padding: 20px 27px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 900;
+            text-transform: uppercase;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        .stor {
+            font-size: 25px;
+            color: $gree;
+
+            i:nth-child(2) {
+                padding-left: 20px;
+            }
+        }
+        
+    }
+    .most {
+        background-color: #fff;
+        box-shadow: 0 0 62px 10px #e6e6e6;
+    }
+    
+}
+/* Footer */
+#footer {
+    background-color: $dark-blue;
+    padding: 130px 0 155px 0;
+
+    h5 {
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 75px;
+    }
+    .nav a{
+        color: $dark-gree;
+    }
+    .stay {
+        input {
+            border-radius: 2px;
+            border: #f6f7fa;
+            background-color: #f6f7fa; 
+            width: 470px;
+            height: 58px;
+            margin-bottom: 18px;
+        }
+        button {
+            background-color: #82ca9c;
+            width: 94px;
+            height: 58px;
+            border-radius: 2px;
+            border: #82ca9c;
+
+            i {
+                color: #fff;
+            }
+        }
+        p {
+            color: $purple;
+        }
+    }
+}

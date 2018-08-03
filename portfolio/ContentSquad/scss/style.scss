@@ -1,0 +1,588 @@
+/*-- General Styles --*/
+body{
+	font-family: "Panton";
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+hr{
+	width: 140px;
+}
+
+/* variable */
+$red: #e2234c;
+$black: #1d1d1b;
+
+/* mixins */
+@mixin section-title{
+	font-size: 55px;
+	font-family: "Panton black";
+	font-weight: bold;
+	font-style: italic;
+	margin-top:	0;
+	padding: 60px 0 40px 0;
+}
+
+@mixin contenus-bg{
+	height: 340px;
+	width: 267px;
+    border-radius: 6px;
+	margin: 0 12px 40px 12px;
+	padding: 20px;
+}
+
+/*-----------------------------------------------------------
+0. Menu
+-----------------------------------------------------------*/
+nav{
+	.menu-icon{
+		position: fixed;
+		width: 90px;
+		height: 85px;
+		top: 45px;
+		left: 45px;
+		background-color: $red;
+		border-radius: 10px;
+		border-color: $red;
+		padding: 8px;
+		z-index: 999;
+		box-sizing: border-box;
+		cursor: pointer;
+		span{
+			width: 100%;
+			height: 10px;
+			display: block;
+			background-color: #fff;
+			margin: 10px 0;
+
+		}
+	}
+	.active{
+		span{
+			transition: all .2s linear;
+			position: absolute;
+			width: calc(100% - 16px);
+			top: calc(50% - 8px);
+			&:nth-child(1){
+				transform: rotate(45deg);
+			}
+			&:nth-child(3){
+				transform: rotate(-45deg);
+			}
+			&:nth-child(2){
+				display: none;
+			}
+		}
+		
+	}
+
+	.overlay{
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		bottom: 20px;
+		right: 20px;
+		background-color: $red;
+		box-sizing: border-box;
+		text-align: center;
+		z-index: 1;   
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		visibility: hidden;
+		.menu{
+			ul{
+				li{
+					font-family: "Panton";
+					font-weight: 300;
+					list-style: none;
+					cursor: pointer;
+					padding: 12px;
+					font-size: 30px;
+					border-bottom: solid 2px #fff;
+					&:hover{
+						font-family: "Panton";
+						font-weight: 900;
+						border-bottom: solid 4px #fff;
+					}
+					a{
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		&.active{
+			visibility: visible;
+		}
+	
+	}
+}
+
+/*-----------------------------------------------------------
+0. Home
+-----------------------------------------------------------*/
+#home{
+	background: url(../images/header_bg.jpg) fixed no-repeat;
+	background-position: center;
+	background-size: cover;
+	font-family: "Panton";
+
+	.logo{
+		margin:	40px 0 0 0;
+	}
+	h1{
+		margin: 0;
+		font-weight: 300;
+		font-style: italic;
+		color: #636362;
+		font-size: 31px;
+	}
+	p{
+
+		font-weight: 500;
+		font-style: italic;
+		font-size: 30px;
+		margin: 160px 0 20px 0;
+		color: $black;
+		margin: 180px 0 175px 0;
+	}
+}
+
+/*-----------------------------------------------------------
+1. About
+-----------------------------------------------------------*/
+#about{
+	background-color: $red;
+	background-position: center;
+    background-size: cover;
+	
+	h1{
+		@include section-title;
+		color: #fff;
+	}
+	hr{	
+		border: 3px solid #fff;
+		position: relative;
+		top: -40px;
+		margin: 40px auto;
+	}
+	.about{
+		margin-bottom: 20px;
+		font-family: "Panton Light";
+		font-weight: 300;
+		margin: 0;
+		position: relative;
+		top: -20px;
+		p{
+			font-size: 25px;
+    		line-height: 30px;
+			display: inline-flex;
+			align-items: baseline;
+			color: #fff;
+    		margin-bottom: 30px;
+		}
+		i{
+		    margin: 0 10px 0 0;
+    		border-radius: 6px;
+    		background: #ffffff;
+    		padding: 2px 3px;
+    		position: relative;
+    		top: -7px;
+		}
+		.fa{
+			font-size: 14px;
+		}
+	}
+
+}
+
+#stats{
+	background-position: center;
+    background-size: cover;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	padding: 70px 0 40px 0;
+	
+    .stats{
+		margin-bottom: 30px;
+		font-style: italic;
+		.stat-item{
+			margin-bottom: 30px;
+			h1{
+			color: $red;
+			font-family: "Panton black";
+			font-weight: 900;
+			font-size: 54px;
+			border: solid 2px $black;
+			border-radius: 50%;
+			width: 170px;
+			height: 170px;
+			padding: 50px 0;
+			display: flex;
+			flex-flow: column;
+			margin: 0 auto;
+				span{
+					font-weight: 500;
+					font-size: 27px;
+				}
+			}
+		}
+		.description-item p{
+			font-family: "Panton";
+			margin-top: 25px;
+			font-size: 22px;
+			font-weight: 500;
+		}
+    }
+}
+
+
+/*-----------------------------------------------------------
+1. Contenus
+-----------------------------------------------------------*/
+#contenus{
+	background: url(../images/contenus_bg.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	h1{
+		@include section-title;
+		color: $red;
+	}
+	hr{	
+		border: 3px solid $black;
+		position: relative;
+		top: -30px;
+		margin: 30px auto;
+	}
+	strong{
+		font-family: "Panton";
+		font-weight: 900;
+		font-size: 30px;
+	}
+	h2 {
+		font-family: "Panton";
+		font-weight: 500;
+		font-size: 30px;
+		margin-bottom: 45px;
+		position: relative;
+		top: -30px;
+	}
+	h3{
+		color: $red;
+		font-family: "Panton";
+		font-size: 25px;
+		font-weight: bold;
+		font-style: italic;
+		margin-bottom: 45px;
+		margin-top: 0;
+		text-transform: uppercase;
+	}
+	
+	.overview-contenus{
+	padding-right: 25px;
+	
+		#divertissement{
+			background: url(../images/divertissement_bg.jpg) no-repeat right center;
+			@include contenus-bg;
+		}
+		#feminin{
+			background: url(../images/fiminin_bg.jpg) no-repeat right center;
+			@include contenus-bg;
+		}
+		#maison{
+			background: url(../images/maison_bg.jpg) no-repeat right center;
+			@include contenus-bg;
+		}
+		#auto-moto{
+			background: url(../images/auto-moto_bg.jpg) no-repeat right center;
+			@include contenus-bg;
+		}
+		ul{
+			list-style: none;
+			padding-left: 0;
+		}
+		li{
+			font-family: "Panton";
+			font-weight: 900;
+			margin-bottom: 20px;
+		}
+		a{
+			color: $black;
+			font-size: 20px;
+		}
+	}
+}
+
+/*-----------------------------------------------------------
+2. Formation
+-----------------------------------------------------------*/
+#formation{
+	background: url(../images/formation_bg.jpg) no-repeat;
+	background-position: center;
+    background-size: cover;
+
+	.overview-formation{
+	padding: 40px;
+	
+		.formation{
+			background-color: rgba(240, 13, 62, .7);
+			padding: 20px 20px;
+			border-radius: 5px;
+			color: #fff;
+			font-family: "Panton";
+		}
+		.flech{
+			position: relative;
+			top: 200px;
+		}
+		.type{
+			background-color: rgba(240, 13, 62, .7);
+			padding: 20px 20px;
+			border-radius: 5px;
+			color: #fff;
+		}
+
+		h3{
+			font-style: italic;
+			font-size: 25px;
+			font-weight: 600;
+			text-align: left;
+			margin-top: 0;
+			margin-bottom: 25px;
+			text-transform: uppercase;
+		}
+		ul{
+			list-style: none;
+			text-align: left;
+			padding: 0px;
+			li{
+				line-height: 55px;
+				font-size: 18px;
+				font-weight: 600;
+				&:after{
+					content: '';
+					display: block;
+					background: url(../images/content-border.png) no-repeat;
+					width: 100%;
+					height: 2px;
+				}
+			}
+		}
+	}
+}
+/*-----------------------------------------------------------
+3. References
+-----------------------------------------------------------*/
+#references{
+	background-color: #fff;
+
+	h1{
+		@include section-title;
+		color: $red;
+	}
+	hr{	
+		border: 3px solid $black;
+		position: relative;
+    	top: -20px;
+	}
+	.references{
+		margin: 80px 0 40px 0;
+	}
+
+}
+/*-----------------------------------------------------------
+4. Contact
+-----------------------------------------------------------*/
+#contact{
+	background: url(../images/contact_bg.jpg) fixed no-repeat;
+	background-position: center;
+    background-size: cover;
+
+	h1{
+		@include section-title;
+		color: #fff;
+	}
+	hr{	
+		border: 3px solid $red;
+		position: relative;
+    	top: -20px;
+	}
+	.form-control{
+	    display: block;
+	    border: 1px solid #d8d8d8;
+	    width: 100%;
+	    height: 65px;
+	    font-size: 16px;
+	    padding: 0;
+	    color: #b3b3b3;
+	    text-indent: 20px;
+	    border-radius: 4px;
+	    font-weight: normal;
+	    line-height: 45px;
+	    background-color: transparent;
+	    &:focus{
+	    	box-shadow: none;
+			color: $red;
+			border-color: $red;
+			background-color: transparent;
+	    }
+	}
+    textarea{
+    	height: 300px !important;
+    }
+    button{
+    	margin: 60px 0;
+    	width: 278px;
+    	height: 65px;
+    	background-color: #fff;
+    	color: $red;
+    	font-family: "Panton";
+    	font-size: 30px;
+    	font-weight: 600;
+    	transform: skew(175deg);
+	    &:hover{
+	    	background-color: $red;
+	    	color: #fff;
+	    	border-color: $red;
+	    }
+    }
+}
+
+/*-----------------------------------------------------------
+5. Footer
+-----------------------------------------------------------*/
+#footer{
+	background-color: #fff;
+	font-family: "Panton";
+
+	.logo-footer{
+		    width: 140px;
+	    	height: 60px;
+	    	margin: 25px 0;
+	}
+	p, address{
+		font-size: 18px;
+		color: $black;
+		font-weight: 300;
+	}
+	h3{
+		font-size: 18px;
+    	font-weight: 900;
+    	margin-bottom: 25px;
+	}
+	ul{
+		list-style: none;
+    	padding-left: 0;
+		li{
+			font-size: 18px;
+	    	font-weight: 300;
+	    	a{
+	    	    color: $black;
+    			text-decoration: none;
+	    	}
+		}
+	}
+}
+#copyrights{
+	display: inline-block;
+	background-color: $black;
+	width: 100%;
+	color: #fff;
+	padding: 25px 0 20px 0;
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+} 
+
+@media only screen and (max-width: 768px) {
+	#contenus{
+		.overview-contenus{
+			#divertissement{
+				background-color: #fff;
+				width: 100%;
+			}
+			#feminin{
+				background-color: #fff;
+				width: 100%;
+			}
+			#maison{
+				background-color: #fff;
+				width: 100%;
+			}
+			#auto-moto{
+				background-color: #fff;
+				width: 100%;
+			}
+		}
+	}
+	#formation{
+		.overview-formation{
+			.formation{
+				margin-bottom: 40px;
+			}
+			ul{
+				text-align: center;
+				li:after{
+					width: 200px;
+					margin: 0 auto;
+				}
+			}
+			.flech{
+				display: none;
+			}
+			h3{
+				text-align: center;
+			}
+		}
+	}
+	nav{
+		.menu-icon{
+			position: fixed;
+			width: 55px;
+			height: 55px;
+			top: 45px;
+			left: 45px;
+			background-color: #e2234c;
+			border-radius: 10px;
+			border-color: #e2234c;
+			padding: 4px;
+			z-index: 999;
+			box-sizing: border-box;
+			span{
+				width: 100%;
+				height: 6px;
+				display: block;
+				background-color: #fff;
+				margin: 8px 0;
+			}
+			
+		}
+	}
+	
+
+}
+
+@media only screen and (max-width: 600px) {
+	#home {
+		.logo{
+			width: 300px;
+		}
+		h1{
+			font-size: 25px;
+		}
+	}
+}

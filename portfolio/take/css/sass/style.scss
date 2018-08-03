@@ -1,0 +1,22 @@
+@import "compass";
+
+/* Variable */
+$default-transition-duration: 0.5s;
+$pink: #f5989d;
+$green: #82ca9c;
+$purple: #615f7d;
+$light-purple: #bd8cbf;
+$dark-blue: #192431;
+$gree: #c5c5c5;
+$light-gree: #e1e1e1;
+$dark-gree: #959595;
+$black: #222626;
+$light-black: #67676d;
+
+
+/* Base */
+@import "base/base";
+
+/* Modules */
+@import "module/header";
+@import "module/section";
