@@ -1,0 +1,45 @@
+.section {
+    background-color: #fff;
+    padding: 85px 0;
+    position: relative;
+    &:before, &:after {
+        content: "";
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 4;
+        @include transform-origin(0, 0);
+        @include transform(skewY(-2deg));
+    }
+    &:after {
+        background-color: #fff;
+        @include transform-origin(100%, 0);
+    }
+}
+
+.section-title {
+    @include clearfix;
+    margin-bottom: 140px;
+    text-transform: uppercase;
+    h1 {
+        width: 202px;
+        float: left;
+        margin: 2px 0 0 0;
+        padding: 0 20px 0 0;
+        text-align: right;
+        color: #000;
+        line-height: 45px;
+        border-right: 4px solid $orange;
+    }
+    p {
+        width: 950px;
+        float: right; 
+        line-height: 25px;
+        margin: 0;
+        padding: 0;
+    }
+}

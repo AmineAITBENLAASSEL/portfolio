@@ -1,0 +1,48 @@
+.about {
+    @include clearfix;
+}
+
+.about-icon {
+    width: 125px;
+    height: 125px;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid $orange;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    width: 505px;
+    float: left;
+}
+
+.about-alert {
+    font-size: 20px;
+    color: #e74c3c;
+}
+
+.about-picture {
+    float: right;
+}
+
+.skills {
+    width: 550px;
+    float: right;
+}
+
+.skills-icon {
+    float: left;
+}
+
+.skills-text {
+    width: 405px;
+    float: right;
+}
+
+.skills-picture {
+    float: left;
+    width: 610px;
+}
