@@ -15,5 +15,8 @@
     .iphone img {
         position: relative;
         top: 225px;
+        @media (max-width: 1050px) { 
+            display: none;
+        }
     }
 }
